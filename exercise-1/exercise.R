@@ -20,10 +20,10 @@ games$diff <- games$sea - games$opp
 games$won <- games$diff > 0
 
 # Create a vector of the opponent names corresponding to the games played
-
+names <- c("Dolphins", "Rams", "Jets", "49ers")
 
 # Assign your dataframe rownames of their opponents
-
+row.names(games) <- names
 
 # View your data frame to see how it has changed!
 
